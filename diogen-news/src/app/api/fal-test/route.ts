@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { generateImage } from 'ai';
+import { generateImage } from '@ai-sdk/fal';   // ← правильний імпорт
 
 export async function GET() {
   const url = await generateImage({
