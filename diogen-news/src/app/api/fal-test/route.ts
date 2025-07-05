@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
-import { generateImage } from '@ai-sdk/fal';
+import { generateImage } from 'ai';
+
 
 export async function GET() {
   const url = await generateImage({
